@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <TextView android:id="@+id/tvProductName"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_regular"
+        android:textColor="@color/colorPrimary"
+        android:text="Product"/>
+
+    <TextView android:id="@+id/tvProductUnit"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/colorBlackLight"
+        android:text="Unit"
+        android:padding="5dp"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down_gray_24dp"
+        android:background="@drawable/bg_light_5r"/>
+
+    <TextView android:id="@+id/tvSalePrice"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_regular"
+        android:textColor="@color/colorBlackLight"
+        android:text="0"
+        android:gravity="right" />
+
+    <ImageButton android:id="@+id/btnAdd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_add_white_24dp"
+        android:background="@drawable/btn_flat_primary"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

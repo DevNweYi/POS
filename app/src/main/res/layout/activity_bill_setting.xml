@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BillSettingActivity"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/colorPrimary"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/bd_gray_10r_white">
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_footer_message1"
+        style="@style/TextInputLayout"
+        android:layout_marginTop="10dp">
+        <EditText android:id="@+id/etFooterMessage1"
+            style="@style/EditText"
+            android:hint="@string/footer_message1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_footer_message2"
+        style="@style/TextInputLayout">
+        <EditText android:id="@+id/etFooterMessage2"
+            style="@style/EditText"
+            android:hint="@string/footer_message2" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_remark"
+        style="@style/TextInputLayout">
+        <EditText android:id="@+id/etRemark"
+            style="@style/EditText"
+            android:hint="@string/remark"
+            android:minHeight="70dp"
+            android:gravity="top"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_flat_primary"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_small"/>
+
+    </LinearLayout>
+
+</LinearLayout>

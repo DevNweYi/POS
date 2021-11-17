@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataChoiceActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView android:text="Create Data for Your Shop"
+        style="@style/StartMainTitle"
+        android:layout_marginBottom="50dp"
+        android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+        android:drawablePadding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/bd_gray_10r_white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/import_data_online"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_regular"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button android:id="@+id/btnCreateData"
+                style="@style/DialogClose"
+                android:text="@string/no_create_data" />
+
+            <Button android:id="@+id/btnYes"
+                style="@style/DialogOk"
+                android:text="@string/yes"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+   <!-- <Button android:id="@+id/btnUseSampleData"
+        android:background="@drawable/bd_primary_soft_5r"
+        android:text="@string/use_sample_data"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_small"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="@dimen/text_regular"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+    <Button android:id="@+id/btnCreateOwnData"
+        android:background="@drawable/bd_primary_soft_5r"
+        android:text="@string/create_own_data"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_small"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:textStyle="bold"/>-->
+
+    </LinearLayout>
+
+</LinearLayout>

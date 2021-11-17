@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaleActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_sale">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_gravity="center">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sale_my"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/colorLight"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView style="@style/StyleVoucherSharp"/>
+
+                <TextView android:id="@+id/tvVoucherNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/StyleVoucherNumber"/>
+
+            </LinearLayout>
+
+            <TextView android:id="@+id/tvCustomer"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_yellow_5r"
+                android:padding="10dp"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/colorBlack"
+                android:text="Customer"
+                android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        </LinearLayout>
+
+        <View style="@style/StyleDividerGrayLight"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <Button android:id="@+id/btnAddSaleItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_flat_primary"
+                android:text="@string/add_item"
+                android:textColor="@color/colorYellow"
+                android:drawableLeft="@drawable/ic_add_yellow_24dp"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/text_small"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+
+            <ImageButton android:id="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_refresh_green_24dp"
+                android:padding="10dp"
+                android:background="@drawable/bg_light_5r"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/StyleDividerGrayLight"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/product"
+                android:textSize="@dimen/text_smaller"/>
+
+           <!-- <TextView android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/sale_quantity"
+                android:textSize="@dimen/text_smaller"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/price"
+                android:gravity="right"
+                android:textSize="@dimen/text_smaller"
+                android:layout_marginLeft="10dp"/>-->
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/amount"
+                android:gravity="right"
+                android:textSize="@dimen/text_smaller"/>
+
+        </LinearLayout>
+
+        <View style="@style/StyleDividerLight"></View>
+
+        <ListView android:id="@+id/lvProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/colorLight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableRow android:id="@+id/trTotalAmt"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:visibility="gone">
+
+                    <TextView android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/StyleNormalAmount"
+                        android:text="@string/total_amount"
+                        android:gravity="left"/>
+
+                    <ImageButton android:id="@+id/btnHideHiddenAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                        android:background="@drawable/bd_gray_1r"/>
+
+                    <TextView android:id="@+id/tvTotalAmt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/StyleNormalAmount"
+                        android:text="0"/>
+
+                </TableRow>
+
+                <TableRow android:id="@+id/trDiscount"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:visibility="gone">
+
+                    <LinearLayout android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/StyleNormalAmount"
+                            android:text="@string/discount" />
+
+                        <TextView android:id="@+id/tvDiscountValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_smaller"
+                            android:textColor="@color/colorBlackLight"
+                            android:layout_marginLeft="5dp"/>
+
+                    </LinearLayout>
+
+                    <TextView android:id="@+id/tvDiscount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/StyleNormalAmount"
+                        android:text="0" />
+
+                </TableRow>
+
+                <TableRow android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/StyleMainAmount"
+                            android:text="@string/net_amount"
+                            android:gravity="left"/>
+
+                        <TextView style="@style/StyleCurrency"/>
+
+                    </LinearLayout>
+
+                    <ImageButton android:id="@+id/btnShowHiddenAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_keyboard_arrow_up_black_24dp"
+                        android:background="@drawable/bd_gray_1r"/>
+
+                    <TextView android:id="@+id/tvNetAmt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/StyleMainAmount"
+                        android:text="0" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageButton android:id="@+id/btnOption"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_more_vert_white_24dp"
+            android:background="@drawable/btn_flat_black_light"
+            android:padding="20dp"/>
+
+        <Button android:id="@+id/btnPay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/pay"
+            android:background="@drawable/btn_flat_primary"
+            android:textSize="@dimen/text_regular"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+</LinearLayout>

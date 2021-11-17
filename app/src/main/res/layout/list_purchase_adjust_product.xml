@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView android:id="@+id/tvProductName"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_regular"
+        android:textColor="@color/colorPrimary"
+        android:text="Product"
+        android:layout_gravity="center"/>
+
+    <TextView android:id="@+id/tvQuantity"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_regular"
+        android:textColor="@color/colorBlack"
+        android:text="1"
+        android:inputType="number"
+        android:gravity="center"
+        android:background="@drawable/bd_gray_1r"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView android:id="@+id/tvProductUnit"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/colorBlackLight"
+        android:text=""
+        android:layout_marginLeft="5dp"/>
+
+    <TextView android:id="@+id/tvPrice"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_regular"
+        android:textColor="@color/colorBlack"
+        android:text="0.00"
+        android:inputType="number"
+        android:gravity="center"
+        android:background="@drawable/bd_gray_1r"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

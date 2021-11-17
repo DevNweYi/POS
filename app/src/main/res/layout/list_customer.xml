@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SetupListLayout">
+
+    <TextView android:id="@+id/tvCustomer"
+        style="@style/ListMainTextView"
+        android:text="Customer Name"/>
+
+    <TextView android:id="@+id/tvMobileNumber"
+        style="@style/ListSmallTextView"
+        android:layout_width="wrap_content"
+        android:layout_gravity="left"
+        android:text="Mobile Number"
+        android:drawableLeft="@drawable/ic_call_blue_16dp"
+        android:drawablePadding="5dp"
+        android:paddingTop="5dp"/>
+
+</LinearLayout>

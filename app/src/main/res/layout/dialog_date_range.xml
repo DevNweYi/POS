@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CategoryActivity"
+    style="@style/DialogLayout">
+
+    <TextView
+        android:id="@+id/tvProfileTitle"
+        style="@style/DialogTitle"
+        android:text="@string/filter"/>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogContent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView android:text="@string/date_range"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLight"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_small"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:background="@drawable/bd_light_5r">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From Date"
+                        android:textSize="@dimen/text_smaller"
+                        android:textColor="@color/colorGrayDark"/>
+
+                    <Button android:id="@+id/btnFromDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_date"
+                        android:textSize="@dimen/text_regular"
+                        android:background="@drawable/bd_light_5r"
+                        android:padding="10dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimarySoft"
+                        android:gravity="left"
+                        android:drawableRight="@drawable/ic_date_range_gray_24dp"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <View android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorLight"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To Date"
+                        android:textSize="@dimen/text_smaller"
+                        android:textColor="@color/colorGrayDark"/>
+
+                    <Button android:id="@+id/btnToDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_date"
+                        android:textSize="@dimen/text_regular"
+                        android:background="@drawable/bd_light_5r"
+                        android:padding="10dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorYellowLight"
+                        android:gravity="left"
+                        android:drawableRight="@drawable/ic_date_range_gray_24dp"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/layoutCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <TextView android:id="@+id/tvCategory"
+                android:text="@string/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLight"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_small"
+                android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogBottom">
+
+        <Button android:id="@+id/btnCancel"
+            style="@style/DialogClose"
+            android:text="@string/cancel"/>
+
+        <Button android:id="@+id/btnOk"
+            style="@style/DialogOk"
+            android:text="@string/apply"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

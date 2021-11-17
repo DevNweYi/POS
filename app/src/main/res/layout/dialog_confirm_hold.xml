@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CategoryActivity"
+    style="@style/DialogLayout">
+
+    <TextView
+        android:id="@+id/tvProfileTitle"
+        style="@style/DialogTitle"
+        android:text="@string/remark"/>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogContent">
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_remark"
+        style="@style/TextInputLayout">
+        <EditText android:id="@+id/etRemark"
+        style="@style/EditText"
+        android:hint="@string/hold_remark" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogBottom">
+
+        <Button android:id="@+id/btnCancel"
+            style="@style/DialogClose"
+            android:text="@string/do_not"/>
+
+        <Button android:id="@+id/btnOk"
+            style="@style/DialogOk"
+            android:text="@string/save"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

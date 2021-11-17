@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrialExpiredActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="#fffbea">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/licence_expired"/>
+
+    <TextView android:textColor="@color/colorBlackDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="လိုင်စင်သက်တမ်းကုန်ဆုံးနေပါပြီ"
+        android:textSize="@dimen/text_regular"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView android:textColor="@color/colorBlackDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ဆက်သွယ်ရန် : 09951087310"
+        android:textSize="@dimen/text_smaller"
+        android:gravity="center"/>
+
+    <Button android:id="@+id/btnContactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/call_us"
+        android:background="@drawable/bd_light_5r"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_call_blue_16dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

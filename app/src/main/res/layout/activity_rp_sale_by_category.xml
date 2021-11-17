@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RpSaleByMonthActivity">
+
+    <TextView android:id="@+id/tvDatePeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary">
+
+                <TextView style="@style/ReportTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/category" />
+
+                <TextView style="@style/ReportTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/total_quantity"
+                    android:gravity="right"/>
+
+                <TextView style="@style/ReportTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/total_amount"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvSaleByCategory"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:background="@color/colorLight">
+
+                <TextView style="@style/ReportFooter"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/total"
+                    android:textStyle="bold"/>
+
+                <TextView android:id="@+id/tvTotalQuantity"
+                    style="@style/ReportFooter"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textStyle="bold"/>
+
+                <TextView android:id="@+id/tvTotalAmt"
+                    style="@style/ReportFooter"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

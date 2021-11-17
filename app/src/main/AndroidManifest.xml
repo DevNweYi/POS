@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.developerstar.pos">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductSetupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UnitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SetupMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReportMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CustomerSetupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SaleListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SaleSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SaleListDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OpenBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OpenBillDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SupplierListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SupplierSetupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PurchaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PurchaseConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PurchaseSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PurchaseListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PurchaseListDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SignUpActivity" />
+        <activity
+            android:name=".ShopSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductBalanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductTrackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrinterSetupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrinterListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BondBtActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BillSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrintBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreditMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReceivableListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PayableListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PhoneAuthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtpConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InfoSlideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DataChoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DataSetupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ImportDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NoInternetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SaleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddSaleProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RpDayEndSaleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RpDetailedSaleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RpTopSaleCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RpSaleByDateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RpSaleByMonthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RpSaleByCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RpSaleByProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RpTopSaleProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RpDetailedPurchaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdjustmentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdjustmentSetupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdjustmentListDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RpProductQuantityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrialExpiredActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppPurchasePlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppPurchaseSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppPurchaseExpiredActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CustomerRepayHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SupplierRepayHistoryActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSaleProductActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout android:id="@+id/layoutCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Spinner android:id="@+id/spCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_flat_green">
+
+                <ImageButton android:id="@+id/btnProductSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_search_white_24dp"
+                    android:background="@drawable/btn_flat_green"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/layoutSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText android:id="@+id/etSearchKeyword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorLight"
+                    android:hint="@string/search"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_regular"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_flat_green">
+
+                <ImageButton android:id="@+id/btnSearchCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_close_red_24dp"
+                    android:background="@drawable/btn_flat_gray"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/product"
+            android:textSize="@dimen/text_smaller"/>
+
+        <TextView android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/unit"
+            android:textSize="@dimen/text_smaller"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrayDark"
+            android:text="@string/price"
+            android:gravity="right"
+            android:textSize="@dimen/text_smaller"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <ListView android:id="@+id/lvProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/list_product_for_sale">
+    </ListView>
+
+</LinearLayout>

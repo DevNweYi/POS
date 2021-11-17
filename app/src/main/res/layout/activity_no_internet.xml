@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoInternetActivity"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageButton android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_black_32dp"
+        android:background="@drawable/btn_flat_transparent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_internet"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No internet connection"
+            android:textColor="@color/colorPrimary"
+            android:padding="10dp"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One POS requires an internet connection the first time only.Check your connection, then try again."
+            android:textColor="@color/colorBlackLight"
+            android:padding="10dp"
+            android:textSize="@dimen/text_small"
+            android:gravity="center"/>
+
+        <Button android:id="@+id/btnRetry"
+            android:text="@string/retry"
+            style="@style/StartMainButton"/>
+
+    </LinearLayout>
+
+</LinearLayout>

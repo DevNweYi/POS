@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProductSetupActivity"
+    style="@style/SetupLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:focusable="false"
+        android:focusableInTouchMode="true">
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_code"
+        style="@style/TextInputLayout">
+        <EditText android:id="@+id/etProductCode"
+            style="@style/EditText"
+            android:hint="@string/code" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_name"
+        style="@style/TextInputLayout">
+        <EditText android:id="@+id/etProductName"
+            style="@style/EditText"
+            android:hint="@string/name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner android:id="@+id/spCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"></Spinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <Switch
+                android:id="@+id/swtUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_unit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_regular" />
+
+            <LinearLayout android:id="@+id/layoutUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bd_gray_5r"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout android:id="@+id/layoutStandardUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/standard_uom"
+                        android:textSize="@dimen/text_small"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="5dp"
+                        android:background="@color/colorGrayLight"/>
+
+                    <TextView android:id="@+id/tvStandardUnit"
+                        style="@style/EditText"
+                        android:background="@color/colorLight"
+                        android:padding="10dp"
+                        android:hint="@string/standard_unit"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/layoutSaleUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorLight"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sale_uom"
+                        android:textSize="@dimen/text_small"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="5dp"
+                        android:background="@color/colorGrayLight"/>
+
+                    <TextView android:id="@+id/tvSaleUnit"
+                        style="@style/EditText"
+                        android:background="@color/colorLight"
+                        android:padding="10dp"
+                        android:hint="@string/sale_unit"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+                    <LinearLayout android:id="@+id/layoutSaleUnitChild"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout android:id="@+id/layoutSaleUnitQty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText android:id="@+id/etSaleUnitQty"
+                                style="@style/SetupUOMQtyTextView"
+                                android:text="1"
+                                android:background="@drawable/bd_yellow_soft_1r_white"/>
+                            <TextView android:id="@+id/tvLabelSaleUnit"
+                                style="@style/SetupUOMQtyTextView"
+                                android:text="Pic"
+                                android:background="@color/colorGrayLight"/>
+                            <TextView style="@style/SetupUOMQtyTextView"
+                                android:text="="
+                                android:background="@color/colorGray"/>
+                            <EditText android:id="@+id/etSaleStandardUnitQty"
+                                style="@style/SetupUOMQtyTextView"
+                                android:text="1"
+                                android:background="@drawable/bd_yellow_soft_1r_white"/>
+                            <TextView android:id="@+id/tvSaleStandardUnit"
+                                style="@style/SetupUOMQtyTextView"
+                                android:text="Pak"
+                                android:background="@color/colorGrayLight"/>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout style="@style/TextInputLayout">
+                            <EditText android:id="@+id/etSUOMSalePrice"
+                                style="@style/EditText"
+                                android:padding="10dp"
+                                android:hint="@string/sale_price"
+                                android:inputType="number"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout style="@style/TextInputLayout">
+                            <EditText android:id="@+id/etSUOMPurPrice"
+                                style="@style/EditText"
+                                android:padding="10dp"
+                                android:hint="@string/pur_price"
+                                android:inputType="number"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/layoutPurUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorLight"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/purchase_uom"
+                        android:textSize="@dimen/text_small"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="5dp"
+                        android:background="@color/colorGrayLight"/>
+
+                    <TextView android:id="@+id/tvPurUnit"
+                        style="@style/EditText"
+                        android:background="@color/colorLight"
+                        android:padding="10dp"
+                        android:hint="@string/purchase_unit"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+                    <LinearLayout android:id="@+id/layoutPurUnitChild"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout android:id="@+id/layoutPurUnitQty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText android:id="@+id/etPurUnitQty"
+                                style="@style/SetupUOMQtyTextView"
+                                android:text="1"
+                                android:background="@drawable/bd_yellow_soft_1r_white"/>
+                            <TextView android:id="@+id/tvLabelPurUnit"
+                                style="@style/SetupUOMQtyTextView"
+                                android:text="Pak"
+                                android:background="@color/colorGrayLight"/>
+                            <TextView style="@style/SetupUOMQtyTextView"
+                                android:text="="
+                                android:background="@color/colorGray"/>
+                            <EditText android:id="@+id/etPurStandardUnitQty"
+                                style="@style/SetupUOMQtyTextView"
+                                android:text="1"
+                                android:background="@drawable/bd_yellow_soft_1r_white"/>
+                            <TextView android:id="@+id/tvPurStandardUnit"
+                                style="@style/SetupUOMQtyTextView"
+                                android:text="Pak"
+                                android:background="@color/colorGrayLight"/>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout style="@style/TextInputLayout">
+                            <EditText android:id="@+id/etPUOMSalePrice"
+                                style="@style/EditText"
+                                android:padding="10dp"
+                                android:hint="@string/sale_price"
+                                android:inputType="number" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout style="@style/TextInputLayout">
+                            <EditText android:id="@+id/etPUOMPurPrice"
+                                style="@style/EditText"
+                                android:padding="10dp"
+                                android:hint="@string/pur_price"
+                                android:inputType="number" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_sale_price"
+                style="@style/TextInputLayout"
+                android:layout_weight="1"
+                android:layout_width="0dp">
+                <EditText android:id="@+id/etSalePrice"
+                    style="@style/EditText"
+                    android:hint="@string/sale_price"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView android:id="@+id/tvSalePriceUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorChocolate"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_small"
+                android:padding="10dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_pur_price"
+                style="@style/TextInputLayout"
+                android:layout_weight="1"
+                android:layout_width="0dp">
+                <EditText android:id="@+id/etPurPrice"
+                    style="@style/EditText"
+                    android:hint="@string/pur_price"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView android:id="@+id/tvPurPriceUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorChocolate"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_small"
+                android:padding="10dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_quantity"
+                style="@style/TextInputLayout"
+                android:layout_weight="1"
+                android:layout_width="0dp">
+                <EditText android:id="@+id/etQuantity"
+                    style="@style/EditText"
+                    android:hint="@string/opening_stock_quantity"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView android:id="@+id/tvQuantityUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorChocolate"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_small"
+                android:padding="10dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <Switch android:id="@+id/swtInventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/track_stock"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_regular"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_track_stock"
+            style="@style/TextInputLayout"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+            <EditText android:id="@+id/etTrackStock"
+                style="@style/EditText"
+                android:hint="@string/track_quantity"
+                android:visibility="gone"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView android:id="@+id/tvTrackStockUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorChocolate"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_small"
+            android:padding="10dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

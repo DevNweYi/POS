@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdjustmentListDetailActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/colorPrimary">
+
+        <TextView android:id="@+id/tvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User: Hnin Hnin Khing"
+            style="@style/StyleTranDetailHeader" />
+
+        <TextView android:id="@+id/tvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DateTime: 10-10-2020 01:30:12 PM"
+            style="@style/StyleTranDetailHeader"/>
+
+    </LinearLayout>
+
+    <ListView android:id="@+id/lvAdjustmentItem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorGrayLight"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.5">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/StyleNormalAmount"
+                android:text="@string/total_amount"
+                android:gravity="left"/>
+
+            <TextView style="@style/StyleCurrency"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right">
+
+            <TextView android:id="@+id/tvTotalAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/StyleNormalAmount"  />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/colorBlackLight"
+        android:padding="10dp"
+        android:background="@drawable/bd_gray_1r"
+        android:visibility="gone"/>
+
+</LinearLayout>

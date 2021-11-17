@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/tvVoucherNo"
+            style="@style/ListMainTextView"
+            android:text="Voucher No."
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView android:id="@+id/tvDateTime"
+            style="@style/ListSmallTextView"
+            android:text="DateTime"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/tvCustomer"
+            style="@style/ListMainTextView"
+            android:text="Customer"
+            android:gravity="right"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center">
+
+            <TextView android:id="@+id/tvNetAmt"
+                style="@style/ListSmallTextView"
+                android:text="Total Amount" />
+
+            <TextView style="@style/StyleCurrency"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/colorLight"
+        android:layout_marginTop="5dp"
+        android:text="Remark"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/colorBlackLight"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button android:id="@+id/btnAddToPOS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/add_to_pos"
+            android:background="@drawable/btn_flat_primary"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_small"/>
+
+        <Button android:id="@+id/btnDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/detail"
+            android:background="@drawable/btn_flat_gray_light"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_small"
+            android:layout_marginLeft="3dp"/>
+
+        <ImageButton android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_delete_red_24dp"
+            android:background="@drawable/btn_flat_light"
+            android:padding="10dp"
+            android:layout_marginLeft="3dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

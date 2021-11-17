@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <TextView android:id="@+id/tvVoucherNo"
+        style="@style/ReportData"
+        android:layout_width="150dp"
+        android:text="Voucher No." />
+
+    <TextView android:id="@+id/tvDateTime"
+        style="@style/ReportData"
+        android:layout_width="150dp"
+        android:text="DateTime" />
+
+    <TextView android:id="@+id/tvCustomer"
+        style="@style/ReportData"
+        android:layout_width="100dp"
+        android:text="Customer" />
+
+    <TextView android:id="@+id/tvUser"
+        style="@style/ReportData"
+        android:layout_width="100dp"
+        android:text="User" />
+
+    <TextView android:id="@+id/tvTotalAmt"
+        style="@style/ReportData"
+        android:layout_width="100dp"
+        android:text="Total Amt"
+        android:gravity="right"/>
+
+    <TextView android:id="@+id/tvDiscount"
+        style="@style/ReportData"
+        android:layout_width="100dp"
+        android:text="Discount"
+        android:gravity="right"/>
+
+    <TextView android:id="@+id/tvNetAmt"
+        style="@style/ReportData"
+        android:layout_width="100dp"
+        android:text="Net Amt"
+        android:gravity="right"/>
+
+    <TextView android:id="@+id/tvLastDebtAmt"
+        style="@style/ReportData"
+        android:layout_width="100dp"
+        android:text="Last Debt Amt"
+        android:gravity="right"/>
+
+    <TextView android:id="@+id/tvPaidAmt"
+        style="@style/ReportData"
+        android:layout_width="100dp"
+        android:text="Paid Amt"
+        android:gravity="right"/>
+
+    <TextView android:id="@+id/tvChangeAmt"
+        style="@style/ReportData"
+        android:layout_width="100dp"
+        android:text="Change Amt"
+        android:gravity="right"/>
+
+    <TextView android:id="@+id/tvDebtAmt"
+        style="@style/ReportData"
+        android:layout_width="100dp"
+        android:text="Debt Amt"
+        android:gravity="right"/>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoSlideActivity"
+    android:id="@+id/layoutInfoSlide"
+    android:orientation="vertical"
+    android:background="#1f78f2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpSlideImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/layoutDot"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"></LinearLayout>
+
+    <Button android:id="@+id/btnNext"
+        android:text="@string/scontinue"
+        android:layout_margin="30dp"
+        style="@style/StartMainButton" />
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note: Trial 14-days are only for Play Store Users!"
+        android:textSize="@dimen/text_smaller"
+        android:layout_gravity="center"
+        android:textColor="@color/colorRedSoft"/>
+
+    android:text="Start 14-days Free Trial"-->
+
+    <Button android:id="@+id/btnFreeTrail"
+        android:text="@string/scontinue"
+        android:layout_margin="30dp"
+        style="@style/StartMainButton"
+        android:textAllCaps="false" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SettingActivity"
+    style="@style/DialogLayout">
+
+    <TextView
+        android:id="@+id/tvProfileTitle"
+        style="@style/DialogTitle"
+        android:text="title"/>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogContent">
+
+       <CheckBox android:id="@+id/chkData"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/data"
+           android:textSize="@dimen/text_regular"
+           android:textColor="@color/colorBlack"
+           android:checked="true"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="@dimen/text_small"
+            android:text="@string/data_path"
+            android:layout_marginTop="10dp" />
+
+        <CheckBox android:id="@+id/chkTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transaction"
+            android:textSize="@dimen/text_regular"
+            android:textColor="@color/colorBlack"
+            android:checked="true"
+            android:layout_marginTop="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="@dimen/text_small"
+            android:text="@string/transaction_path"
+            android:layout_marginTop="10dp" />
+
+        <TextView android:id="@+id/tvImportWarning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="@dimen/text_small"
+            android:text="@string/import_warning"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_warning_yellow_24dp"
+            android:drawablePadding="10dp" />
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogBottom">
+
+        <Button android:id="@+id/btnCancel"
+            style="@style/DialogClose"
+            android:text="@string/cancel"/>
+
+        <Button android:id="@+id/btnOk"
+            style="@style/DialogOk"
+            android:text="@string/apply"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PurchaseListDetailActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/colorPrimary">
+
+        <TextView android:id="@+id/tvItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User: Hnin Hnin Khing"
+            style="@style/StyleTranDetailHeader" />
+
+        <TextView android:id="@+id/tvSupplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supplier: Nwe Yi Aung"
+            style="@style/StyleTranDetailHeader" />
+
+        <TextView android:id="@+id/tvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DateTime: 10-10-2020 01:30:12 PM"
+            style="@style/StyleTranDetailHeader"/>
+
+    </LinearLayout>
+
+    <ListView android:id="@+id/lvPurchaseItem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorGrayLight"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_amount"
+                style="@style/StyleNormalAmount"
+                android:layout_gravity="left"/>
+
+            <TextView android:id="@+id/tvDiscountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/discount"
+                style="@style/StyleNormalAmount"
+                android:layout_gravity="left" />
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="left">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/StyleMainAmount"
+                    android:text="@string/net_amount"/>
+
+                <TextView style="@style/StyleCurrency"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right">
+
+            <TextView android:id="@+id/tvTotalAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/StyleNormalAmount"  />
+
+            <TextView android:id="@+id/tvDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/StyleNormalAmount" />
+
+            <TextView android:id="@+id/tvNetAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/StyleMainAmount" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/layoutSupplierAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorGray"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/last_debt_amount"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_small"/>
+            <TextView android:id="@+id/tvLastDebtAmt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textColor="@color/colorBlack"
+                android:gravity="right"
+                android:textSize="@dimen/text_small"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/paid_amount"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_small"/>
+            <TextView android:id="@+id/tvPaidAmt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textColor="@color/colorBlack"
+                android:gravity="right"
+                android:textSize="@dimen/text_small"/>
+        </LinearLayout>
+        <View style="@style/StyleDividerLight"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"></View>
+        <LinearLayout android:id="@+id/layoutChangeAmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/change_amount"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_small"/>
+            <TextView android:id="@+id/tvChangeAmt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textColor="@color/colorBlack"
+                android:gravity="right"
+                android:textSize="@dimen/text_small"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layoutDebtAmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/debt_amount"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_small"/>
+            <TextView android:id="@+id/tvDebtAmt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textColor="@color/colorBlack"
+                android:gravity="right"
+                android:textSize="@dimen/text_small"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/layoutCredit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/bd_gray_1r"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/tvCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/credit"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:padding="5dp"/>
+
+        <TextView android:id="@+id/tvCreditRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorBlackLight"
+            android:paddingTop="3dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

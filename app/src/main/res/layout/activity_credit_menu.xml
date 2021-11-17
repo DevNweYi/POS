@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SetupLayout"
+    tools:context=".SetupMenuActivity"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/tvReceivableList"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_receivable_list"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvCustomerRepayHistory"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_customer_repayment_history"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvPayableList"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_payable_list"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvSupplierRepayHistory"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_supplier_repayment_history"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+</LinearLayout>

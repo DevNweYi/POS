@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e8f2f1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="50dp"
+        android:paddingTop="50dp">
+
+        <TextView android:id="@+id/tvShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Shop Name"
+            android:textSize="@dimen/text_x_largest"
+            android:textColor="@color/colorLight"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_home_yellow_24dp"
+            android:drawablePadding="5dp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:layout_marginTop="5dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="3dp"
+                android:background="@color/colorYellow"
+                android:layout_marginRight="10dp"></View>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="3dp"
+                android:background="@color/colorRedSoft"
+                android:layout_marginLeft="10dp"></View>
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvLoginUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Admin"
+            android:textSize="@dimen/text_regular"
+            android:textColor="@color/colorLight"
+            android:drawableTop="@drawable/ic_person_black_24dp"
+            android:drawablePadding="5dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <ScrollView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-50dp">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout style="@style/MainMenuLayout">
+
+            <Button android:id="@+id/btnPOS"
+               style="@style/MainMenuSecondButton"
+                android:text="@string/main_pos"
+                android:drawableTop="@mipmap/pos"/>
+
+            <Button android:id="@+id/btnOpenBill"
+                style="@style/MainMenuSecondButton"
+                android:text="@string/main_opened_bill"
+                android:drawableTop="@mipmap/sale_order"/>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MainMenuLayout">
+
+            <Button android:id="@+id/btnSale"
+                style="@style/MainMenuSecondButton"
+                android:text="@string/main_sale_receipts"
+                android:drawableTop="@mipmap/sale_receipt"/>
+
+            <Button android:id="@+id/btnPurchase"
+                style="@style/MainMenuSecondButton"
+                android:text="@string/main_purchase"
+                android:drawableTop="@mipmap/sale_order"/>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MainMenuLayout">
+
+            <Button android:id="@+id/btnPurchaseList"
+                style="@style/MainMenuSecondButton"
+                android:text="@string/main_purchase_receipts"
+                android:drawableTop="@mipmap/sale_receipt"/>
+
+            <Button android:id="@+id/btnCreditList"
+                style="@style/MainMenuSecondButton"
+                android:text="@string/main_credit_receipts"
+                android:drawableTop="@mipmap/debt"/>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MainMenuLayout">
+
+            <Button android:id="@+id/btnStock"
+                style="@style/MainMenuSecondButton"
+                android:text="@string/main_product"
+                android:drawableTop="@mipmap/product"/>
+
+            <Button android:id="@+id/btnReport"
+                style="@style/MainMenuSecondButton"
+                android:text="@string/main_report"
+                android:drawableTop="@mipmap/report"/>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MainMenuLayout">
+
+            <Button android:id="@+id/btnDataSetup"
+                style="@style/MainMenuSecondButton"
+                android:text="@string/main_data_setup"
+                android:drawableTop="@mipmap/data_setup"/>
+
+            <Button android:id="@+id/btnSetting"
+                style="@style/MainMenuSecondButton"
+                android:text="@string/main_setting"
+                android:drawableTop="@mipmap/setting"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SetupListLayout">
+
+    <TextView android:id="@+id/tvCategory"
+        style="@style/ListMainTextView"
+        android:text="Product Name"/>
+
+    <TextView android:id="@+id/tvItem"
+        style="@style/ListSmallTextView"
+        android:text="0 Item"/>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SetupLayout"
+    tools:context=".ReportMenuActivity">
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/tvRpDayEndSale"
+        style="@style/SetupMenuTextView"
+        android:text="@string/rp_day_end_sale"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvRpDetailedSale"
+        style="@style/SetupMenuTextView"
+        android:text="@string/rp_detailed_sale"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvRpSaleByDate"
+        style="@style/SetupMenuTextView"
+        android:text="@string/rp_sale_by_date"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvRpSaleByMonth"
+        style="@style/SetupMenuTextView"
+        android:text="@string/rp_sale_by_month"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvRpSaleByCategory"
+        style="@style/SetupMenuTextView"
+        android:text="@string/rp_sale_by_category"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvRpTopSaleCategory"
+        style="@style/SetupMenuTextView"
+        android:text="@string/rp_top_sale_category"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvRpSaleByProduct"
+        style="@style/SetupMenuTextView"
+        android:text="@string/rp_sale_by_product"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvRpTopSaleProduct"
+        style="@style/SetupMenuTextView"
+        android:text="@string/rp_top_sale_product"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvRpDetailedPurchase"
+        style="@style/SetupMenuTextView"
+        android:text="@string/rp_detailed_purchase"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvRpStockQuantity"
+        style="@style/SetupMenuTextView"
+        android:text="@string/rp_product_quantity"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+</LinearLayout>
+
+</ScrollView>

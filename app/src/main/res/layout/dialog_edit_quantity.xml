@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".XSaleConfirmActivity"
+    style="@style/DialogLayout"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/tvProduct"
+        style="@style/DialogTitle"
+        android:text="Product"/>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogContent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton android:id="@+id/btnMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_remove_black_24dp"
+            android:background="@drawable/bd_primary_5r"
+            android:padding="15dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/colorLight"
+            android:gravity="center">
+
+            <TextView android:id="@+id/tvQuantity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_larger"
+                android:textColor="@color/colorBlack"
+                android:text="1"
+                android:inputType="number"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView android:id="@+id/tvUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/colorGrayDark"
+                android:text="Pak"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <ImageButton android:id="@+id/btnPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_black_24dp"
+            android:background="@drawable/bd_primary_5r"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogBottom"
+        android:layout_marginTop="20dp">
+
+        <Button android:id="@+id/btnCancel"
+            style="@style/DialogClose"/>
+
+        <Button android:id="@+id/btnOk"
+            style="@style/DialogOk"
+            android:text="@string/ok"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

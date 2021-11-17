@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".XSaleActivity"
+    style="@style/DialogLayout">
+
+    <TextView
+        android:id="@+id/tvProfileTitle"
+        style="@style/DialogTitle"
+        android:text="@string/supplier"/>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogContent">
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_supplier_name"
+            style="@style/TextInputLayout">
+            <EditText android:id="@+id/etSupplierName"
+                style="@style/EditText"
+                android:hint="@string/supplier_name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogBottom">
+
+        <Button android:id="@+id/btnCancel"
+            style="@style/DialogClose"
+            android:text="@string/do_not"/>
+
+        <Button android:id="@+id/btnOk"
+            style="@style/DialogOk"
+            android:text="@string/add"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

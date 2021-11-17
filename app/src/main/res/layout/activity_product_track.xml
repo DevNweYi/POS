@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SetupLayout"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ProductTrackActivity"
+    android:focusable="false"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout style="@style/SetupSearchLayout">
+
+        <EditText android:id="@+id/etSearch"
+            style="@style/SetupSearchEditText"/>
+
+        <Spinner android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"></Spinner>
+
+    </LinearLayout>
+
+    <ListView android:id="@+id/lvProductTrack"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CategoryActivity"
+    style="@style/SetupLayout"
+    android:focusable="false"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout style="@style/SetupSearchLayout">
+
+        <EditText android:id="@+id/etSearch"
+            style="@style/SetupSearchEditText"/>
+
+        <RelativeLayout android:id="@+id/layoutDelete"
+            style="@style/SetupDeleteLayout">
+
+            <ImageButton android:id="@+id/btnClose"
+                style="@style/SetupImageClose"/>
+
+            <TextView android:id="@+id/tvUnitCount"
+                style="@style/SetupDeleteTextView"/>
+
+            <ImageButton android:id="@+id/btnDelete"
+                style="@style/SetupImageDelete"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ListView android:id="@+id/lvUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

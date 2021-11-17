@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CustomerSetupActivity"
+    style="@style/SetupLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:focusable="false"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_customer_name"
+                style="@style/TextInputLayout">
+                <EditText android:id="@+id/etCustomerName"
+                    style="@style/EditText"
+                    android:hint="@string/business_name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_contact_name"
+                style="@style/TextInputLayout">
+                <EditText android:id="@+id/etContactName"
+                    style="@style/EditText"
+                    android:hint="@string/contact_name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText android:id="@+id/etMobileNumber"
+                style="@style/EditText"
+                android:hint="@string/mobile_number"
+                android:inputType="number"/>
+
+            <EditText android:id="@+id/etOtherMobileNumber"
+                style="@style/EditText"
+                android:hint="@string/other_mobile_number"
+                android:inputType="number"/>
+
+            <EditText android:id="@+id/etAddress"
+                style="@style/EditText"
+                android:hint="@string/address"
+                android:minHeight="100dp"
+                android:gravity="top"/>
+
+            <CheckBox android:id="@+id/chkIsAllowCredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/allow_credit_sale"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_small"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

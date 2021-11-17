@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopSettingActivity"
+    android:background="@color/colorPrimary">
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:layout_gravity="center">
+
+    <TextView android:id="@+id/tvTitle"
+        android:text="@string/create_shop"
+        style="@style/StartMainTitle"
+        android:layout_marginBottom="50dp"
+        android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+        android:drawablePadding="5dp"/>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/bd_gray_10r_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView android:id="@+id/imgLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_picture_in_picture_gray_100dp"
+            android:background="@color/colorLight"/>
+
+        <Button android:id="@+id/btnBrowse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/browse"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_name"
+        style="@style/TextInputLayout">
+        <EditText android:id="@+id/etName"
+            style="@style/EditText"
+            android:hint="@string/shop_name"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_description"
+        style="@style/TextInputLayout">
+        <EditText android:id="@+id/etDescription"
+            style="@style/EditText"
+            android:hint="@string/description"
+            android:minHeight="70dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionNext"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_mobile"
+        style="@style/TextInputLayout">
+        <EditText android:id="@+id/etMobile"
+            style="@style/EditText"
+            android:hint="@string/mobile_number"
+            android:inputType="number"
+            android:imeOptions="actionNext"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_other_mobile"
+        style="@style/TextInputLayout">
+        <EditText android:id="@+id/etOtherMobile"
+            style="@style/EditText"
+            android:hint="@string/other_mobile_number"
+            android:inputType="number"
+            android:imeOptions="actionNext"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_address"
+        style="@style/TextInputLayout">
+        <EditText android:id="@+id/etAddress"
+            style="@style/EditText"
+            android:hint="@string/address"
+            android:minHeight="100dp"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_currency"
+        style="@style/TextInputLayout"
+        android:visibility="gone">
+        <EditText android:id="@+id/etCurrency"
+            style="@style/EditText"
+            android:hint="@string/currency_symbol" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button android:id="@+id/btnSave"
+        android:text="@string/create"
+        style="@style/StartMainButton" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

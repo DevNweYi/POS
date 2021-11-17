@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CategoryActivity"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <LinearLayout style="@style/DialogLayout">
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/DialogTitle"
+        android:text="Name"/>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogContent">
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_net_amount"
+            style="@style/TextInputLayout">
+            <EditText android:id="@+id/etNetAmount"
+                style="@style/EditText"
+                android:hint="@string/net_amount"
+                android:enabled="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_debt_amount"
+            style="@style/TextInputLayout">
+            <EditText android:id="@+id/etDebtAmount"
+                style="@style/EditText"
+                android:hint="@string/last_debt_amount"
+                android:enabled="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout android:id="@+id/layoutPaidAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bd_gray_5r">
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_paid_amount"
+            style="@style/TextInputLayout">
+            <EditText android:id="@+id/etPaidAmount"
+                style="@style/EditText"
+                android:hint="@string/paid_amount"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apply"
+            android:layout_gravity="right"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_small"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"/>
+
+        <TextView android:id="@+id/tvChangeAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_regular"
+            android:textStyle="bold"
+            android:text="@string/change_amount"
+            android:textColor="@color/colorAccent"
+            android:gravity="right"
+            android:visibility="gone"/>
+
+        <TextView android:id="@+id/tvDebtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_regular"
+            android:textStyle="bold"
+            android:text="@string/debt_amount"
+            android:textColor="@color/colorAccent"
+            android:gravity="right"
+            android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <EditText android:id="@+id/etCreditRemark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bd_gray_1r"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remark"
+            android:padding="5dp"
+            android:gravity="top"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorBlackLight"
+            android:minHeight="50dp" />
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogBottom">
+
+        <Button android:id="@+id/btnCancel"
+            style="@style/DialogClose" />
+
+        <Button android:id="@+id/btnOk"
+            style="@style/DialogOk"
+            android:text="@string/ok"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

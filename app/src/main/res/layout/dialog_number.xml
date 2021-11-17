@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="@dimen/text_largest"
+        android:padding="10dp"
+        android:focusable="false"
+        android:drawableRight="@drawable/ic_backspace_black_24dp"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:inputType="number"
+        android:background="@color/colorTransparent"/>
+
+    <TableLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginTop="5dp">
+
+        <TableRow android:layout_height="wrap_content">
+
+            <Button android:id="@+id/btnOne"
+                style="@style/NumberButton"
+                android:text="1" />
+
+            <Button android:id="@+id/btnTwo"
+                style="@style/NumberButton"
+                android:text="2"/>
+
+            <Button android:id="@+id/btnThree"
+                style="@style/NumberButton"
+                android:text="3"/>
+
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+
+            <Button android:id="@+id/btnFour"
+                style="@style/NumberButton"
+                android:text="4"/>
+
+            <Button android:id="@+id/btnFive"
+                style="@style/NumberButton"
+                android:text="5"/>
+
+            <Button android:id="@+id/btnSix"
+                style="@style/NumberButton"
+                android:text="6"/>
+
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+
+            <Button android:id="@+id/btnSeven"
+                style="@style/NumberButton"
+                android:text="7"/>
+
+            <Button android:id="@+id/btnEight"
+                style="@style/NumberButton"
+                android:text="8"/>
+
+            <Button android:id="@+id/btnNine"
+                style="@style/NumberButton"
+                android:text="9"/>
+
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content">
+
+            <Button android:id="@+id/btnZero"
+                style="@style/NumberButton"
+                android:text="0"/>
+
+            <Button android:id="@+id/btnCancel"
+                style="@style/NumberButton"
+                android:text="@string/close"
+                android:textAllCaps="false"
+                android:textColor="@color/colorRedSoft"/>
+
+            <Button android:id="@+id/btnOk"
+                style="@style/NumberButton"
+                android:text="@string/ok"
+                android:background="@drawable/bg_yellow_10r"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

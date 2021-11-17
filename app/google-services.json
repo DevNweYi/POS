@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "294087742577",
+    "project_id": "onepos-2028d",
+    "storage_bucket": "onepos-2028d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294087742577:android:51b8e1d6ab690a733577d0",
+        "android_client_info": {
+          "package_name": "com.developerstar.pos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294087742577-c96fajhlagvf8igioqbp07hko95ueos2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developerstar.pos",
+            "certificate_hash": "aa30c76ca2b54b122ea05b6d224ce3baa2557a2f"
+          }
+        },
+        {
+          "client_id": "294087742577-o8e23jnfmrfkdbv0jajdf6uc0qbeerbo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAa8NPqw__BHltiWFlyslaxo4QZACeCpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294087742577-o8e23jnfmrfkdbv0jajdf6uc0qbeerbo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

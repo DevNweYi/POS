@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PurchaseListActivity"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLight">
+
+        <EditText android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/SetupSearchEditText" />
+
+        <ImageButton android:id="@+id/btnDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_date_range_yellow_24dp"
+            android:background="@drawable/btn_flat_black_light"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginLeft="10dp" />
+
+        <RelativeLayout android:id="@+id/layoutDelete"
+            style="@style/SetupDeleteLayout">
+
+            <ImageButton android:id="@+id/btnClose"
+                style="@style/SetupImageClose"/>
+
+            <TextView android:id="@+id/tvDeletedPurchase"
+                style="@style/SetupDeleteTextView"/>
+
+            <ImageButton android:id="@+id/btnDelete"
+                style="@style/SetupImageDelete"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/today_purchase_list"
+        android:textSize="@dimen/text_regular"
+        android:textColor="@color/colorPrimary"
+        android:gravity="left|center"
+        android:padding="10dp"
+        android:background="@drawable/bd_gray_1r"/>
+
+    <ListView android:id="@+id/lvPurchaseList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

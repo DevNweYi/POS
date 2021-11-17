@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SettingActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background">
+
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+    <TextView android:id="@+id/tvShopSetting"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_shop_setting"
+        android:drawableLeft="@drawable/ic_home_black_24dp"/>
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvPrinterSetting"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_printer"
+        android:drawableLeft="@drawable/ic_print_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvVoucherFormat"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_voucher_format"
+        android:drawableLeft="@drawable/ic_format_list_numbered_24"
+        android:drawableTint="@color/colorBlack"
+        android:visibility="gone"/>
+
+    <View style="@style/StyleDividerGrayLight"
+        android:visibility="gone"></View>
+
+    <TextView android:id="@+id/tvBillSetting"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_bill_setting"
+        android:drawableLeft="@drawable/ic_assignment_black_24dp"/>
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <LinearLayout android:id="@+id/layoutDataBackup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView style="@style/SetupMenuTextView"
+            android:text="@string/sub_data_backup"
+            android:drawableLeft="@drawable/ic_arrow_upward_black_24dp" />
+
+        <TextView android:text="@string/data_backup_detail"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_smaller"/>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <LinearLayout android:id="@+id/layoutDataRestore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView style="@style/SetupMenuTextView"
+            android:text="@string/sub_data_restore"
+            android:drawableLeft="@drawable/ic_arrow_downward_black_24dp" />
+
+        <TextView android:text="@string/data_restore_detail"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_smaller"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerGrayLight"/>
+
+    <LinearLayout android:id="@+id/layoutBackupDataCloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView style="@style/SetupMenuTextView"
+            android:text="@string/sub_data_backup_cloud"
+            android:drawableLeft="@drawable/ic_backup_black_24dp" />
+
+        <TextView android:text="@string/data_backup_cloud_detail"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_smaller"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerGrayLight"
+        android:visibility="gone"/>
+
+    <LinearLayout android:id="@+id/layoutRestoreDataCloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView style="@style/SetupMenuTextView"
+            android:text="@string/sub_data_restore_cloud"
+            android:drawableLeft="@drawable/ic_restore_black_24dp" />
+
+        <TextView android:text="@string/data_restore_cloud_detail"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_smaller"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvUploadData"
+        style="@style/SetupMenuTextView"
+        android:text="Upload Data"
+        android:drawableLeft="@drawable/ic_backup_black_24dp"/>
+
+    <View style="@style/StyleDividerGrayLight"
+        android:visibility="gone"></View>
+
+    </LinearLayout>
+
+</ScrollView>

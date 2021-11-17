@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvData"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/text_regular"
+    android:textStyle="bold"
+    android:textColor="@color/colorBlackLight"
+    android:gravity="left|center_vertical"
+    android:padding="10dp"/>
+

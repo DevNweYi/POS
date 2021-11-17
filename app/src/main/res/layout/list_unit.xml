@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SetupListLayout">
+
+    <TextView android:id="@+id/tvUnitName"
+        android:text="Unit Name"
+        style="@style/ListMainTextView"/>
+
+    <TextView android:id="@+id/tvUnitKeyword"
+        android:text="Unit Keyword"
+        style="@style/ListSmallTextView"/>
+
+</LinearLayout>

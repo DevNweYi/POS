@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RpDayEndSaleActivity"
+    android:orientation="vertical"
+    android:background="@color/colorLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <TextView android:id="@+id/tvToday"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/today"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorYellow"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/bottom_border"/>
+
+        <TextView android:id="@+id/tvYesterday"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/yesterday"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorGray"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <ImageButton android:id="@+id/btnDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_date_range_yellow_24dp"
+            android:background="@drawable/btn_flat_black_light"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"/>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00/00/0000"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular"
+        android:textColor="@color/colorPrimary"/>
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bd_gray_10r_white_content">
+
+        <TableRow android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                style="@style/StyleNormalAmount"
+                android:text="@string/sale_voucher_count"
+                android:gravity="left"/>
+
+            <TextView android:id="@+id/tvTotalSale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/StyleNormalAmount"
+                android:text="0"/>
+        </TableRow>
+
+        <View style="@style/StyleDividerLight"></View>
+
+        <TableRow android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/StyleNormalAmount"
+                android:text="@string/total_quantity"
+                android:gravity="left"/>
+
+            <TextView android:id="@+id/tvTotalQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/StyleNormalAmount"
+                android:text="0"/>
+        </TableRow>
+
+        <View style="@style/StyleDividerLight"></View>
+
+        <TableRow android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/StyleNormalAmount"
+                android:text="@string/total_amount"
+                android:gravity="left"/>
+
+            <TextView android:id="@+id/tvTotalAmt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/StyleNormalAmount"
+                android:text="0"/>
+        </TableRow>
+
+        <View style="@style/StyleDividerLight"></View>
+
+        <TableRow android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/StyleNormalAmount"
+                android:text="@string/discount"
+                android:gravity="left"/>
+
+            <TextView android:id="@+id/tvDiscountAmt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/StyleNormalAmount"
+                android:text="0"/>
+        </TableRow>
+
+        <View style="@style/StyleDividerLight"
+            android:visibility="gone"></View>
+
+        <TableRow android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/StyleNormalAmount"
+                android:text="@string/credit"
+                android:gravity="left"/>
+
+            <TextView android:id="@+id/tvCreditAmt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/StyleNormalAmount"
+                android:text="0"/>
+        </TableRow>
+
+        <View style="@style/StyleDividerLight"></View>
+
+        <TableRow android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/StyleNormalAmount"
+                android:text="@string/total_sale_amount"
+                android:gravity="left"/>
+
+            <TextView android:id="@+id/tvNetAmt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/StyleNormalAmount"
+                android:text="0"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

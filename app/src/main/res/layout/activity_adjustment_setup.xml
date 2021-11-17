@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdjustmentSetupActivity"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner android:id="@+id/spCategory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></Spinner>
+
+            <ImageButton android:id="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_refresh_white_24dp"
+                android:padding="10dp"
+                android:background="@drawable/btn_flat_green" />
+
+        </LinearLayout>
+
+        <View style="@style/StyleDividerGrayLight"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner android:id="@+id/spProduct"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"></Spinner>
+
+            <TextView android:id="@+id/tvProductUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/colorPrimary"
+                android:padding="5dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:drawableRight="@drawable/ic_keyboard_arrow_down_gray_24dp"/>
+
+            <ImageButton android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_white_24dp"
+                android:padding="10dp"
+                android:background="@drawable/btn_flat_primary" />
+
+        </LinearLayout>
+
+        <View style="@style/StyleDividerGrayLight"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/product"
+                android:textSize="@dimen/text_smaller"/>
+
+            <TextView android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/sale_quantity"
+                android:textSize="@dimen/text_smaller"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrayDark"
+                android:text="@string/price"
+                android:gravity="right"
+                android:textSize="@dimen/text_smaller"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <View style="@style/StyleDividerLight"></View>
+
+        <ListView android:id="@+id/lvProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2">
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/StyleNormalAmount"
+                    android:text="@string/total_amount"
+                    android:gravity="left"/>
+
+                <TextView style="@style/StyleCurrency"/>
+
+            </LinearLayout>
+
+            <TextView android:id="@+id/tvTotalAmt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/StyleNormalAmount"
+                android:text="0"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText android:id="@+id/etRemark"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bd_gray_1r"
+        android:hint="@string/remark"
+        android:padding="5dp"
+        android:textColor="@color/colorBlackLight"
+        android:textSize="@dimen/text_small"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button android:id="@+id/btnAddAdjustment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/add_adjustment"
+            android:background="@drawable/btn_flat_primary"
+            android:textSize="@dimen/text_regular"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+</LinearLayout>

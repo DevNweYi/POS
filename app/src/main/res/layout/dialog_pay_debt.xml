@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ReceivableListActivity"
+        style="@style/DialogLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvProfileTitle"
+            style="@style/DialogTitle"
+            android:text="@string/record_payment"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+        <ImageButton android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_red_24dp"
+            android:background="@color/colorLight"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogContent">
+
+        <TextView android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From / To"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_regular"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_debt_amount"
+            style="@style/TextInputLayout">
+            <EditText android:id="@+id/etDebtAmount"
+                style="@style/EditText"
+                android:hint="@string/receivable"
+                android:enabled="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_paid_amount"
+            style="@style/TextInputLayout">
+            <EditText android:id="@+id/etPaidAmount"
+                style="@style/EditText"
+                android:hint="@string/paid_amount"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <EditText android:id="@+id/etDate"
+                style="@style/EditText"
+                android:hint="@string/date_time"
+                android:enabled="false"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+            <ImageButton android:id="@+id/btnDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date_range_yellow_light_24dp"
+                android:background="@drawable/bg_light_10r"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <EditText android:id="@+id/etRemark"
+            style="@style/EditText"
+            android:hint="@string/remark"
+            android:minHeight="100dp"
+            android:gravity="top"/>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogBottom">
+
+        <Button android:id="@+id/btnOk"
+            android:text="@string/record_new_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_small"
+            android:background="@drawable/btn_flat_accent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

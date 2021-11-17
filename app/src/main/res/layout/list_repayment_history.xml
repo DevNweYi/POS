@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/tvDate"
+            style="@style/ListMainTextView"
+            android:text="Date" />
+
+        <TextView android:id="@+id/tvName"
+            style="@style/ListSmallTextView"
+            android:text="Customer/Supplier"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/tvDebtAmt"
+            style="@style/ListMainTextView"
+            android:text="Debt Amount"
+            android:gravity="right"/>
+
+        <TextView android:id="@+id/tvPaidAmt"
+            style="@style/ListSmallTextView"
+            android:text="Paid Amount"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+</LinearLayout>

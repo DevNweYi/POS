@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrialExpiredActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="#fffbea">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/trial_expired" />
+
+    <TextView android:textColor="@color/colorBlackDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your free trial has expired."
+        android:textSize="@dimen/text_regular"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView android:textColor="@color/colorBlackDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for trying OnePOS .We let you know that free trial has expired.You need to see all plans to continue using it."
+        android:textSize="@dimen/text_smaller"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button android:id="@+id/btnContactUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/call_us"
+            android:background="@drawable/bd_light_5r"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_call_blue_16dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <Button android:id="@+id/btnSeeAllPlan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/see_all_plan"
+            android:background="@drawable/btn_flat_primary"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

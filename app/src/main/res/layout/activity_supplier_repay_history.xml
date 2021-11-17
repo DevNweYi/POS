@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaleListActivity"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLight">
+
+        <TextView android:id="@+id/tvSupplier"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/colorLight"
+            android:padding="10dp"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorBlack"
+            android:text="Supplier"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        <ImageButton android:id="@+id/btnDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_date_range_yellow_24dp"
+            android:background="@drawable/btn_flat_black_light"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+        <RelativeLayout android:id="@+id/layoutDelete"
+            style="@style/SetupDeleteLayout">
+
+            <ImageButton android:id="@+id/btnClose"
+                style="@style/SetupImageClose"/>
+
+            <TextView android:id="@+id/tvDeletedSale"
+                style="@style/SetupDeleteTextView"/>
+
+            <ImageButton android:id="@+id/btnDelete"
+                style="@style/SetupImageDelete"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="@dimen/text_regular"
+        android:textColor="@color/colorPrimary"
+        android:gravity="left|center"
+        android:padding="10dp"
+        android:background="@drawable/bd_gray_1r"/>
+
+    <ListView android:id="@+id/lvRepayHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

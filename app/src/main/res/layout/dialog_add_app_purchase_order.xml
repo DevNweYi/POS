@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AppPurchasePlanActivity"
+    style="@style/DialogLayout">
+
+    <TextView
+        android:id="@+id/tvProfileTitle"
+        style="@style/DialogTitle"
+        android:text="@string/app_purchase"/>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogContent">
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_name"
+            style="@style/TextInputLayout">
+            <EditText android:id="@+id/etName"
+                style="@style/EditText"
+                android:hint="@string/name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_mobile_number"
+            style="@style/TextInputLayout">
+            <EditText android:id="@+id/etMobileNumber"
+                style="@style/EditText"
+                android:hint="@string/mobile_number"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerLight"></View>
+
+    <LinearLayout style="@style/DialogBottom">
+
+        <Button android:id="@+id/btnCancel"
+            style="@style/DialogClose"
+            android:text="@string/cancel"/>
+
+        <Button android:id="@+id/btnOk"
+            style="@style/DialogOk"
+            android:text="@string/confirm"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

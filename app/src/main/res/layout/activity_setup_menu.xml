@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SetupLayout"
+    tools:context=".SetupMenuActivity"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/tvProduct"
+        style="@style/SetupMenuTextView"
+        android:text="@string/product"
+        android:drawableLeft="@drawable/ic_list_black_24dp"
+        android:visibility="gone"/>
+
+    <View style="@style/StyleDividerGrayLight"
+        android:visibility="gone"></View>
+
+    <TextView android:id="@+id/tvCategory"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_category"
+        android:drawableLeft="@drawable/ic_collections_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvUnit"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_unit"
+        android:drawableLeft="@drawable/ic_view_quilt_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvItem"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_user"
+        android:drawableLeft="@drawable/ic_people_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvCustomer"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_customer"
+        android:drawableLeft="@drawable/ic_people_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvSupplier"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_supplier"
+        android:drawableLeft="@drawable/ic_people_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+</LinearLayout>

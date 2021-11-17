@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppPurchaseSuccessActivity"
+    android:orientation="vertical"
+    android:background="@color/colorLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/successful_purchase"
+            android:textSize="@dimen/text_largest"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_done_all_yellow_42dp"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanks for purchasing OnePOS. We will connect for you as soon as possible."
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorGrayLight"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/purchase_plan"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorBlackLight"
+            android:drawableLeft="@drawable/ic_fiber_manual_record_blue_12dp"
+            android:drawablePadding="5dp"/>
+
+        <TextView android:id="@+id/tvPurchasePlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monthly Plan"
+            android:textSize="@dimen/text_regular"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/purchase_price"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorBlackLight"
+            android:drawableLeft="@drawable/ic_fiber_manual_record_yellow_12dp"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView android:id="@+id/tvPurchasePlanPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MMK 20,000"
+            android:textSize="@dimen/text_regular"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <Button android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:textSize="@dimen/text_regular"
+        android:textColor="@color/colorBlackLight"
+        android:background="@drawable/bd_gray_5r"
+        android:textAllCaps="false"
+        android:layout_margin="20dp" />
+
+</LinearLayout>

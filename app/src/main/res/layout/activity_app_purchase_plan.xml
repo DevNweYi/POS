@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrialExpiredActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#fff5e9">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/discussion"/>
+
+    <TextView android:textColor="@color/colorBlackDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Purchase Plans"
+        android:textSize="@dimen/text_regular"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout android:id="@+id/layoutMonthlyPlan"
+            style="@style/AppPurchasePlanLayout"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView android:id="@+id/tvMonthlyPlan"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/monthly_plan"
+                android:textSize="@dimen/text_smaller"
+                android:textColor="@color/colorBlackDark"
+                android:gravity="center"/>
+
+            <TextView android:id="@+id/tvMonthlyPlanPrice"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/monthly_plan_price"
+                android:textSize="@dimen/text_small"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimarySoft"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/layoutYearlyPlan"
+            style="@style/AppPurchasePlanLayout"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView android:id="@+id/tvYearlyPlan"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/yearly_plan"
+                android:textSize="@dimen/text_smaller"
+                android:textColor="@color/colorBlackDark"
+                android:gravity="center"/>
+
+            <TextView android:id="@+id/tvYearlyPlanPrice"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/yearly_plan_price"
+                android:textSize="@dimen/text_small"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/layoutCustomizedPlan"
+            style="@style/AppPurchasePlanLayout"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView android:id="@+id/tvCustomizedPlan"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/customized_plan"
+                android:textSize="@dimen/text_smaller"
+                android:textColor="@color/colorBlackDark"
+                android:gravity="center"/>
+
+            <TextView android:id="@+id/tvCustomizedPlanPrice"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/negotiate"
+                android:textSize="@dimen/text_small"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimarySoft"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="5dp">
+
+        <Button android:id="@+id/btnContactUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/call_us"
+            android:background="@drawable/bd_gray_5r"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_call_blue_16dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <Button android:id="@+id/btnPurchase"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/purchase_app_plan"
+            android:background="@drawable/btn_flat_black_light"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_regular"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="5dp"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

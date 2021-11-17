@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SetupLayout"
+    tools:context=".SetupMenuActivity"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/tvProductList"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_product_list"
+        android:drawableLeft="@drawable/ic_list_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvProductNew"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_add_new_product"
+        android:drawableLeft="@drawable/ic_playlist_add_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvProductBalance"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_product_balance"
+        android:drawableLeft="@drawable/ic_playlist_add_check_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView android:id="@+id/tvTrackProduct"
+            style="@style/SetupMenuTextView"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sub_track_product"
+            android:drawableLeft="@drawable/ic_featured_play_list_black_24dp" />
+
+        <TextView android:id="@+id/tvTrackProductQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="@dimen/text_regular"
+            android:textColor="@color/colorRedSoft"
+            android:textStyle="bold"
+            android:background="@color/colorYellow"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+    <TextView android:id="@+id/tvAdjustProductList"
+        style="@style/SetupMenuTextView"
+        android:text="@string/sub_adjust_product_list"
+        android:drawableLeft="@drawable/ic_receipt_black_24dp" />
+
+    <View style="@style/StyleDividerGrayLight"></View>
+
+</LinearLayout>
