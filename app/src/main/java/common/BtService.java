@@ -1,12 +1,14 @@
 package common;
 
 import android.app.IntentService;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Environment;
 import android.util.Log;
 
+import com.developerstar.pos.R;
 import com.developerstar.pos.print.GPrinterCommand;
 import com.developerstar.pos.print.PrintPic;
 import com.developerstar.pos.print.PrintQueue;
@@ -114,9 +116,9 @@ public class BtService extends IntentService {
         PrintQueue.getQueue(getApplicationContext()).add(printBytes);
     }
 
-    private void printBitmapOrder(String sTypeName) {
+    private void printBitmapOrder(String sTypeName, Context context) {
         Bitmap bitmap=null;
-        File directory = new File(Environment.getExternalStorageDirectory().getPath(), "/OnePOSDB");
+        File directory = new File(Environment.getExternalStorageDirectory().getPath(), context.getResources().getString(R.string.folder_name));
         if (!directory.exists()) {
             directory.mkdirs();
         }
