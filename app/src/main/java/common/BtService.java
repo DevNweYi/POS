@@ -116,7 +116,7 @@ public class BtService extends IntentService {
 
     private void printBitmapOrder(String sTypeName) {
         Bitmap bitmap=null;
-        File directory = new File(Environment.getExternalStorageDirectory().getPath(), "/OnePOSDB");
+        File directory = new File(Environment.getExternalStorageDirectory().getPath(), "/POSTodayDB");
         if (!directory.exists()) {
             directory.mkdirs();
         }
