@@ -53,9 +53,9 @@ public class OtpConfirmActivity extends AppCompatActivity {
         mobileNumber=i.getStringExtra("MobileNumber");
         verificationCode=i.getStringExtra("VerificationCode");
 
-        tvNumber.setText("We have sent you an SMS with a code to the number +95 - " + mobileNumber.substring(1));
+        //tvNumber.setText("We have sent you an SMS with a code to the number +95 - " + mobileNumber.substring(1));
 
-        StartFirebaseLogin();
+        //StartFirebaseLogin();
 
         etOTP1.setOnKeyListener(new View.OnKeyListener() {
             @Override
@@ -100,12 +100,16 @@ public class OtpConfirmActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*startActivity(new Intent(OtpConfirmActivity.this, InfoSlideActivity.class));
-                finish();*/
-                progressDialog.show();
+
+                // test code
+                startActivity(new Intent(OtpConfirmActivity.this, InfoSlideActivity.class));
+                finish();
+                // end test code
+
+                /*progressDialog.show();
                 otp=etOTP1.getText().toString()+etOTP2.getText().toString()+etOTP3.getText().toString()+etOTP4.getText().toString()+etOTP5.getText().toString()+etOTP6.getText().toString();
                 PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationCode, otp);
-                SigninWithPhone(credential);
+                SigninWithPhone(credential);*/
             }
         });
         btnResendCode.setOnClickListener(new View.OnClickListener() {

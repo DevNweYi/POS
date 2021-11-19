@@ -219,7 +219,7 @@
     <string name="finish">Finish</string>
     <string name="use_sample_data">Quickly Import the Data</string>
     <string name="create_own_data">Create the Data</string>
-    <string name="import_data_online">Do you want to import sample data from OnePOS cloud server?</string>
+    <string name="import_data_online">Do you want to import sample data from POS cloud server?</string>
     <string name="import_data_storage">Import Data from your Exporting Excel</string>
     <string name="standard_uom">Standard UOM</string>
     <string name="sale_uom">Sale UOM</string>

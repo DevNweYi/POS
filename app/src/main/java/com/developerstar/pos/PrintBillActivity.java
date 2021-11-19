@@ -329,7 +329,7 @@ public class PrintBillActivity extends AppCompatActivity {
 
     public void print(Context context,String msg) throws IOException {
         posPtr = new ESCPOSPrinter();
-        File directory = new File(Environment.getExternalStorageDirectory().getPath(), "/OnePOSDB/BillPrint");
+        File directory = new File(Environment.getExternalStorageDirectory().getPath()+context.getResources().getString(R.string.folder_name), "BillPrint");
         if (!directory.exists()) {
             directory.mkdirs();
         }
@@ -341,7 +341,7 @@ public class PrintBillActivity extends AppCompatActivity {
     }
 
     private String savePrintImageToStorage(Bitmap bitmapImage){
-        File directory = new File(Environment.getExternalStorageDirectory().getPath(), "/OnePOSDB/BillPrint");
+        File directory = new File(Environment.getExternalStorageDirectory().getPath()+context.getResources().getString(R.string.folder_name), "BillPrint");
         if (!directory.exists()) {
             directory.mkdirs();
         }
@@ -461,7 +461,7 @@ public class PrintBillActivity extends AppCompatActivity {
 
     private void printBitmapOrder() {
         Bitmap bitmap=null;
-        File directory = new File(Environment.getExternalStorageDirectory().getPath(), "/OnePOSDB/BillPrint");
+        File directory = new File(Environment.getExternalStorageDirectory().getPath()+context.getResources().getString(R.string.folder_name), "BillPrint");
         if (!directory.exists()) {
             directory.mkdirs();
         }

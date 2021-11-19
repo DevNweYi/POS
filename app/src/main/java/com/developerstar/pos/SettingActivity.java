@@ -159,7 +159,7 @@ public class SettingActivity extends AppCompatActivity {
         }
 
         protected String doInBackground(final String... args){
-            File exportDir = new File(Environment.getExternalStorageDirectory().getPath(), "/OnePOSDB/DataBackup");
+            File exportDir = new File(Environment.getExternalStorageDirectory().getPath()+context.getResources().getString(R.string.folder_name), "DataBackup");
             if (!exportDir.exists()) {
                 exportDir.mkdirs();
             }
@@ -322,7 +322,7 @@ public class SettingActivity extends AppCompatActivity {
         }
 
         protected String doInBackground(final String... args){
-            message=systemInfo.dataRestore(db);
+            message=systemInfo.dataRestore(db,context);
             return message;
         }
 
@@ -354,7 +354,7 @@ public class SettingActivity extends AppCompatActivity {
         }
 
         protected String doInBackground(final String... args){
-            File exportDir = new File(Environment.getExternalStorageDirectory().getPath(), "/OnePOSDB/TransactionBackup");
+            File exportDir = new File(Environment.getExternalStorageDirectory().getPath()+context.getResources().getString(R.string.folder_name), "TransactionBackup");
             if (!exportDir.exists()) {
                 exportDir.mkdirs();
             }
@@ -507,7 +507,7 @@ public class SettingActivity extends AppCompatActivity {
         }
 
         protected String doInBackground(final String... args){
-            File importDir = new File(Environment.getExternalStorageDirectory().getPath(), "/OnePOSDB/TransactionBackup");
+            File importDir = new File(Environment.getExternalStorageDirectory().getPath()+context.getResources().getString(R.string.folder_name), "TransactionBackup");
             if (!importDir.exists()) {
                 importDir.mkdirs();
             }

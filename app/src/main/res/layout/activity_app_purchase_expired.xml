@@ -41,7 +41,8 @@
         android:textSize="@dimen/text_small"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
-        android:drawableLeft="@drawable/ic_call_blue_16dp"
+        android:drawableLeft="@drawable/ic_call_16dp"
+        android:drawableTint="@color/colorPrimary"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         android:layout_marginTop="10dp"/>

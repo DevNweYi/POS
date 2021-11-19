@@ -230,7 +230,7 @@ public class ImportDataActivity extends AppCompatActivity {
         }
 
         protected String doInBackground(final String... args){
-            message=systemInfo.dataRestore(db);
+            message=systemInfo.dataRestore(db,context);
             return message;
         }
 

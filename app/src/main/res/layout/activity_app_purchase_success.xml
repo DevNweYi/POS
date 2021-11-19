@@ -51,8 +51,9 @@
             android:text="@string/purchase_plan"
             android:textSize="@dimen/text_small"
             android:textColor="@color/colorBlackLight"
-            android:drawableLeft="@drawable/ic_fiber_manual_record_blue_12dp"
-            android:drawablePadding="5dp"/>
+            android:drawableLeft="@drawable/ic_fiber_manual_record_12dp"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/colorPrimary"/>
 
         <TextView android:id="@+id/tvPurchasePlan"
             android:layout_width="match_parent"

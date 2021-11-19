@@ -193,7 +193,7 @@ public class ShopSettingActivity extends AppCompatActivity {
         }
         Bitmap bitmap58 = BitmapFactory.decodeStream(bis58);
         Bitmap bitmap80 = BitmapFactory.decodeStream(bis80);
-        File directory = new File(Environment.getExternalStorageDirectory().getPath(), "/OnePOSDB/TestPrint");
+        File directory = new File(Environment.getExternalStorageDirectory().getPath()+context.getResources().getString(R.string.folder_name), "TestPrint");
         if (!directory.exists()) {
             directory.mkdirs();
         }

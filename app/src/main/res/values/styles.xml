@@ -257,9 +257,10 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:padding">20dp</item>
         <item name="android:layout_margin">5dp</item>
-        <item name="android:drawableRight">@drawable/ic_keyboard_arrow_right_primary_24dp</item>
+        <item name="android:drawableRight">@drawable/ic_keyboard_arrow_right_24dp</item>
         <item name="android:drawablePadding">20dp</item>
         <item name="android:gravity">left|center</item>
+        <item name="android:drawableTint">@color/colorPrimary</item>
     </style>
     <style name="MainMenuLayout">
         <item name="android:layout_width">match_parent</item>
@@ -275,6 +276,7 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:paddingTop">20dp</item>
         <item name="android:layout_margin">5dp</item>
+        <item name="android:drawableTint">@color/colorPrimary</item>
     </style>
     <style name="StyleNormalAmount">
         <item name="android:gravity">right</item>

@@ -31,13 +31,13 @@
             <LinearLayout
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/btn_flat_green">
+                android:background="@color/colorBlackLight">
 
                 <ImageButton android:id="@+id/btnProductSearch"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/ic_search_white_24dp"
-                    android:background="@drawable/btn_flat_green"/>
+                    android:background="@drawable/btn_flat_black_light"/>
 
             </LinearLayout>
 

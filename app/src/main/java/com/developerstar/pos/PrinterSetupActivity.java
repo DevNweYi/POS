@@ -414,7 +414,7 @@ public class PrinterSetupActivity extends AppCompatActivity {
     public void print(Context context) throws IOException {
         File filePath;
         posPtr = new ESCPOSPrinter();
-        File directory = new File(Environment.getExternalStorageDirectory().getPath(), "/OnePOSDB/TestPrint");
+        File directory = new File(Environment.getExternalStorageDirectory().getPath()+context.getResources().getString(R.string.folder_name), "TestPrint");
         if (!directory.exists()) {
             directory.mkdirs();
         }

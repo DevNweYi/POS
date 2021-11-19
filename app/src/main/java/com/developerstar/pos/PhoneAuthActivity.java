@@ -41,17 +41,21 @@ public class PhoneAuthActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setLayoutResource();
 
-        StartFirebaseLogin();
+        //StartFirebaseLogin();
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Intent i = new Intent(PhoneAuthActivity.this, OtpConfirmActivity.class);
+
+                // test code
+                Intent i = new Intent(PhoneAuthActivity.this, OtpConfirmActivity.class);
                 i.putExtra("MobileNumber",etMobileNumber.getText().toString());
                 i.putExtra("VerificationCode",verificationCode);
                 startActivity(i);
-                finish();*/
-                phoneNumber=etMobileNumber.getText().toString();
+                finish();
+                // end test code
+
+                /*phoneNumber=etMobileNumber.getText().toString();
                 if(phoneNumber.length()==0){
                     input_mobile_number.setError(getResources().getString(R.string.enter_phone_number));
                     return;
@@ -62,7 +66,7 @@ public class PhoneAuthActivity extends AppCompatActivity {
                         60,                           // Timeout duration
                         TimeUnit.SECONDS,                // Unit of timeout
                         PhoneAuthActivity.this,        // Activity (for callback binding)
-                        mCallback);
+                        mCallback);*/
             }
         });
     }

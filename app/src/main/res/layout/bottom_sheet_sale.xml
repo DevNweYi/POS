@@ -29,10 +29,11 @@
         android:gravity="left|center"
         android:textSize="@dimen/text_regular"
         android:background="@drawable/btn_flat_transparent"
-        android:drawableRight="@drawable/ic_local_offer_primary_24dp"
+        android:drawableRight="@drawable/ic_local_offer_24dp"
         android:textColor="@color/colorPrimary"
         android:paddingLeft="15dp"
-        android:paddingRight="15dp"/>
+        android:paddingRight="15dp"
+        android:drawableTint="@color/colorPrimary"/>
 
     <View style="@style/StyleDividerGrayLight"></View>
 
@@ -43,9 +44,10 @@
         android:textSize="@dimen/text_regular"
         android:text="@string/hold"
         android:textColor="@color/colorPrimary"
-        android:drawableRight="@drawable/ic_save_primary_24dp"
+        android:drawableRight="@drawable/ic_save_24dp"
         android:gravity="left|center"
         android:paddingLeft="15dp"
-        android:paddingRight="15dp"/>
+        android:paddingRight="15dp"
+        android:drawableTint="@color/colorPrimary"/>
 
 </LinearLayout>

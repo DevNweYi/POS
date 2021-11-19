@@ -12,7 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_gravity="left"
         android:text="Mobile Number"
-        android:drawableLeft="@drawable/ic_call_blue_16dp"
+        android:drawableLeft="@drawable/ic_call_16dp"
+        android:drawableTint="@color/colorPrimary"
         android:drawablePadding="5dp"
         android:paddingTop="5dp"/>
 

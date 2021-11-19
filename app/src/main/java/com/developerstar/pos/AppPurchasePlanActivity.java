@@ -91,7 +91,7 @@ public class AppPurchasePlanActivity extends AppCompatActivity {
         btnContactUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "09420243505" ));
+                Intent i = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + getResources().getString(R.string.company_phone) ));
                 startActivity(i);
             }
         });

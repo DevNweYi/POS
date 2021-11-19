@@ -328,9 +328,9 @@ public class SystemInfo {
         });
     }
 
-    public String dataRestore(DatabaseAccess db){
+    public String dataRestore(DatabaseAccess db,Context context){
         String message="";
-        File importDir = new File(Environment.getExternalStorageDirectory().getPath(), "/OnePOSDB/DataBackup");
+        File importDir = new File(Environment.getExternalStorageDirectory().getPath()+context.getResources().getString(R.string.folder_name), "DataBackup");
         if (!importDir.exists()) {
             importDir.mkdirs();
         }

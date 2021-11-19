@@ -46,9 +46,25 @@
         <entry key="..\:/NYA/Projects/POS Project/POS/app/src/main/res/layout/list_purchase_master.xml" value="0.16197916666666667" />
         <entry key="..\:/NYA/Projects/POS Project/POS/app/src/main/res/layout/list_rp_product_quantity.xml" value="0.1546875" />
         <entry key="..\:/NYA/Projects/POS Project/POS/app/src/main/res/layout/list_sale_master.xml" value="0.16197916666666667" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable-v21/btn_flat_green.xml" value="0.15833333333333333" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable-v21/ic_brightness_1_blue_24dp.xml" value="0.2203125" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable-v21/ic_refresh_green_24dp.xml" value="0.1203125" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable-v24/ic_restore_black_24dp.xml" value="0.11770833333333333" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_call_black_24dp.xml" value="0.11979166666666667" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_call_blue_16dp.xml" value="0.11979166666666667" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_delete_black_24dp.xml" value="0.11979166666666667" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_fiber_manual_record_blue_12dp.xml" value="0.11979166666666667" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_format_list_numbered_24.xml" value="0.1" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.14114583333333333" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_keyboard_arrow_right_primary_24dp.xml" value="0.11979166666666667" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_local_offer_primary_24dp.xml" value="0.11979166666666667" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_person_black_24dp.xml" value="0.14114583333333333" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_person_primary_24dp.xml" value="0.14114583333333333" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_playlist_add_black_24dp.xml" value="0.18020833333333333" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_print_black_24dp.xml" value="0.19635416666666666" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_remove_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_restore_primary_soft_24dp.xml" value="0.18020833333333333" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_save_primary_24dp.xml" value="0.1203125" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_text_format_24.xml" value="0.19635416666666666" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_add_sale_product.xml" value="0.18020833333333333" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_adjustment_list.xml" value="0.16077898550724637" />
@@ -67,7 +83,7 @@
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_data_choice.xml" value="0.25" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_data_setup.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_import_data.xml" value="0.16077898550724637" />
-        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_info_slide.xml" value="0.33" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_info_slide.xml" value="0.17105263157894737" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_login.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_main.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_no_internet.xml" value="0.16077898550724637" />
@@ -93,21 +109,23 @@
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_register.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_report_menu.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_rp_day_end_sale.xml" value="0.16077898550724637" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_rp_top_sale_category.xml" value="0.18" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_sale.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_sale_list.xml" value="0.18020833333333333" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_sale_list_detail.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_sale_success.xml" value="0.16077898550724637" />
-        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_setting.xml" value="0.2139945652173913" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_setting.xml" value="0.19480519480519481" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_setup_menu.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_shop_setting.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_sign_up.xml" value="0.16077898550724637" />
-        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_splash.xml" value="0.22" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_splash.xml" value="0.15979381443298968" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_supplier_list.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_supplier_repay_history.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_supplier_setup.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_trial_expired.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_unit.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_user.xml" value="0.16077898550724637" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/bottom_sheet_sale.xml" value="0.1" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/content_adjustment.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/custom_action_bar_sale.xml" value="0.18020833333333333" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/dialog_add_app_purchase_order.xml" value="0.18931159420289856" />
@@ -132,6 +150,8 @@
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/dialog_top_category_data.xml" value="0.20380434782608695" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/dialog_unit_list.xml" value="0.18020833333333333" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/dialog_year_picker.xml" value="0.18020833333333333" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/list_customer.xml" value="0.10364583333333334" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/list_supplier.xml" value="0.10364583333333334" />
       </map>
     </option>
   </component>
