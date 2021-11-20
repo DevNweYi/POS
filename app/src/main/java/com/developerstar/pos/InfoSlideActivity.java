@@ -33,7 +33,7 @@ public class InfoSlideActivity extends AppCompatActivity {
     Button btnNext,btnFreeTrail;
     ViewPager vpSlideImage;
     LinearLayout layoutDot,layoutInfoSlide;
-    int[] images={R.drawable.s1,R.drawable.s2,R.drawable.s3,R.drawable.s4};
+    int[] images={R.drawable.s1_today,R.drawable.s2_today,R.drawable.s3_today,R.drawable.s4_today};
     ViewPagerAdapter viewPagerAdapter;
     TextView[] dot;
     SystemInfo systemInfo=new SystemInfo();

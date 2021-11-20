@@ -24,7 +24,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/no_internet"/>
+            android:src="@drawable/no_internet_today"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="One POS requires an internet connection the first time only.Check your connection, then try again."
+            android:text="POS Today requires an internet connection the first time only.Check your connection, then try again."
             android:textColor="@color/colorBlackLight"
             android:padding="10dp"
             android:textSize="@dimen/text_small"
