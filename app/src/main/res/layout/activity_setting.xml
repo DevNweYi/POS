@@ -29,9 +29,11 @@
         style="@style/SetupMenuTextView"
         android:text="@string/sub_voucher_format"
         android:drawableLeft="@drawable/ic_format_list_numbered_24"
-        android:drawableTint="@color/colorBlack" />
+        android:drawableTint="@color/colorBlack"
+        android:visibility="gone"/>
 
-    <View style="@style/StyleDividerGrayLight"></View>
+    <View style="@style/StyleDividerGrayLight"
+        android:visibility="gone"></View>
 
     <TextView android:id="@+id/tvBillSetting"
         style="@style/SetupMenuTextView"
@@ -85,7 +87,8 @@
     <LinearLayout android:id="@+id/layoutBackupDataCloud"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <TextView style="@style/SetupMenuTextView"
             android:text="@string/sub_data_backup_cloud"
@@ -101,12 +104,14 @@
 
     </LinearLayout>
 
-    <View style="@style/StyleDividerGrayLight" />
+    <View style="@style/StyleDividerGrayLight"
+        android:visibility="gone"/>
 
     <LinearLayout android:id="@+id/layoutRestoreDataCloud"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <TextView style="@style/SetupMenuTextView"
             android:text="@string/sub_data_restore_cloud"
@@ -122,7 +127,8 @@
 
     </LinearLayout>
 
-    <View style="@style/StyleDividerGrayLight"></View>
+    <View style="@style/StyleDividerGrayLight"
+        android:visibility="gone"></View>
 
     <TextView android:id="@+id/tvUploadData"
         style="@style/SetupMenuTextView"
