@@ -29,8 +29,7 @@
         style="@style/SetupMenuTextView"
         android:text="@string/sub_voucher_format"
         android:drawableLeft="@drawable/ic_format_list_numbered_24"
-        android:drawableTint="@color/colorBlack"
-        android:visibility="gone"/>
+        android:drawableTint="@color/colorBlack" />
 
     <View style="@style/StyleDividerGrayLight"
         android:visibility="gone"></View>
