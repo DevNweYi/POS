@@ -228,6 +228,8 @@
             android:screenOrientation="portrait" />
         <activity android:name=".SupplierRepayHistoryActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".VoucherNoSetupActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
