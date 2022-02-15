@@ -31,8 +31,7 @@
         android:drawableLeft="@drawable/ic_format_list_numbered_24"
         android:drawableTint="@color/colorBlack" />
 
-    <View style="@style/StyleDividerGrayLight"
-        android:visibility="gone"></View>
+    <View style="@style/StyleDividerGrayLight"></View>
 
     <TextView android:id="@+id/tvBillSetting"
         style="@style/SetupMenuTextView"

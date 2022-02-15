@@ -70,7 +70,7 @@
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_info_slide.xml" value="0.33" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_login.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_main.xml" value="0.16077898550724637" />
-        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_no_internet.xml" value="0.33" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_no_internet.xml" value="0.17445482866043613" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_open_bill.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_open_bill_detail.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_otp_confirm.xml" value="0.16077898550724637" />
@@ -97,7 +97,7 @@
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_sale_list.xml" value="0.18020833333333333" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_sale_list_detail.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_sale_success.xml" value="0.16077898550724637" />
-        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_setting.xml" value="0.2139945652173913" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_setting.xml" value="0.33" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_setup_menu.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_shop_setting.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_sign_up.xml" value="0.16077898550724637" />
@@ -108,6 +108,7 @@
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_trial_expired.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_unit.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_user.xml" value="0.16077898550724637" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/activity_voucher_no_setup.xml" value="0.16458333333333333" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/content_adjustment.xml" value="0.16077898550724637" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/custom_action_bar_sale.xml" value="0.18020833333333333" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/dialog_add_app_purchase_order.xml" value="0.18931159420289856" />
