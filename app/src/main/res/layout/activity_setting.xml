@@ -86,8 +86,7 @@
     <LinearLayout android:id="@+id/layoutBackupDataCloud"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:visibility="gone">
+        android:orientation="vertical">
 
         <TextView style="@style/SetupMenuTextView"
             android:text="@string/sub_data_backup_cloud"
@@ -103,14 +102,12 @@
 
     </LinearLayout>
 
-    <View style="@style/StyleDividerGrayLight"
-        android:visibility="gone"/>
+    <View style="@style/StyleDividerGrayLight" />
 
     <LinearLayout android:id="@+id/layoutRestoreDataCloud"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:visibility="gone">
+        android:orientation="vertical">
 
         <TextView style="@style/SetupMenuTextView"
             android:text="@string/sub_data_restore_cloud"
