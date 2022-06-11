@@ -46,6 +46,10 @@
         <entry key="..\:/NYA/Projects/POS Project/POS/app/src/main/res/layout/list_purchase_master.xml" value="0.16197916666666667" />
         <entry key="..\:/NYA/Projects/POS Project/POS/app/src/main/res/layout/list_rp_product_quantity.xml" value="0.1546875" />
         <entry key="..\:/NYA/Projects/POS Project/POS/app/src/main/res/layout/list_sale_master.xml" value="0.16197916666666667" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable-v21/bg_light_10r_content.xml" value="0.2203125" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/bg_light_10r.xml" value="0.2203125" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/btn_flat_black.xml" value="0.2203125" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/btn_number.xml" value="0.2203125" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_format_list_numbered_24.xml" value="0.1" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_print_black_24dp.xml" value="0.19635416666666666" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_remove_black_24dp.xml" value="0.1" />
@@ -133,6 +137,8 @@
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/dialog_top_category_data.xml" value="0.20380434782608695" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/dialog_unit_list.xml" value="0.18020833333333333" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/dialog_year_picker.xml" value="0.18020833333333333" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/list_print_sale_data.xml" value="0.20416666666666666" />
+        <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/layout/list_print_sale_voucher.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
