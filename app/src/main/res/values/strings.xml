@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">POS Today</string>
+    <string name="app_name">One POS</string>
     <string name="title_activity_sale">SaleActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

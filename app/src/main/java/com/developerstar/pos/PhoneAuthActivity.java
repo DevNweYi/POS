@@ -61,7 +61,7 @@ public class PhoneAuthActivity extends AppCompatActivity {
                     return;
                 }
                 progressDialog.show();
-                PhoneAuthProvider.getInstance().verifyPhoneNumber(
+                PhoneAuthProvider.getInstance().verifyPhoneNumber("+95"+
                         phoneNumber,                     // Phone number to verify
                         60,                           // Timeout duration
                         TimeUnit.SECONDS,                // Unit of timeout

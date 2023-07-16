@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
@@ -46,6 +45,19 @@
         <entry key="..\:/NYA/Projects/POS Project/POS/app/src/main/res/layout/list_purchase_master.xml" value="0.16197916666666667" />
         <entry key="..\:/NYA/Projects/POS Project/POS/app/src/main/res/layout/list_rp_product_quantity.xml" value="0.1546875" />
         <entry key="..\:/NYA/Projects/POS Project/POS/app/src/main/res/layout/list_sale_master.xml" value="0.16197916666666667" />
+        <entry key="..\:/Workspace/2-Inventory System/OnePOS Project/POS/app/src/main/res/drawable-v24/bd_yellow_1r_primary_soft.xml" value="0.190625" />
+        <entry key="..\:/Workspace/2-Inventory System/OnePOS Project/POS/app/src/main/res/layout/activity_bill_setting.xml" value="0.17291666666666666" />
+        <entry key="..\:/Workspace/2-Inventory System/OnePOS Project/POS/app/src/main/res/layout/activity_otp_confirm.xml" value="0.17447916666666666" />
+        <entry key="..\:/Workspace/2-Inventory System/OnePOS Project/POS/app/src/main/res/layout/activity_phone_auth.xml" value="0.1296875" />
+        <entry key="..\:/Workspace/2-Inventory System/OnePOS Project/POS/app/src/main/res/layout/activity_print_bill.xml" value="0.17291666666666666" />
+        <entry key="..\:/Workspace/2-Inventory System/OnePOS Project/POS/app/src/main/res/layout/activity_printer_list.xml" value="0.17291666666666666" />
+        <entry key="..\:/Workspace/2-Inventory System/OnePOS Project/POS/app/src/main/res/layout/activity_register.xml" value="0.17447916666666666" />
+        <entry key="..\:/Workspace/2-Inventory System/OnePOS Project/POS/app/src/main/res/layout/activity_sale.xml" value="0.17395833333333333" />
+        <entry key="..\:/Workspace/2-Inventory System/OnePOS Project/POS/app/src/main/res/layout/activity_shop_setting.xml" value="0.17447916666666666" />
+        <entry key="..\:/Workspace/2-Inventory System/OnePOS Project/POS/app/src/main/res/layout/bottom_sheet_sale.xml" value="0.17395833333333333" />
+        <entry key="..\:/Workspace/2-Inventory System/OnePOS Project/POS/app/src/main/res/layout/content_sale.xml" value="0.17395833333333333" />
+        <entry key="..\:/Workspace/2-Inventory System/OnePOS Project/POS/app/src/main/res/layout/list_print_sale_data.xml" value="0.17291666666666666" />
+        <entry key="..\:/Workspace/2-Inventory System/OnePOS Project/POS/app/src/main/res/layout/list_print_sale_voucher.xml" value="0.17291666666666666" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_format_list_numbered_24.xml" value="0.1" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_print_black_24dp.xml" value="0.19635416666666666" />
         <entry key="..\:/Workspace/POS Project/POS/app/src/main/res/drawable/ic_remove_black_24dp.xml" value="0.1" />
@@ -180,7 +192,7 @@
       </value>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
